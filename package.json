@@ -1,26 +1,27 @@
 {
-  "name": "checkout",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www",
-    "dev-windows": "nodemon ./bin/www"
-  },
+  "name": "drop-in",
+  "version": "1.0.0",
+  "description": "Drop-in demo",
+  "main": "index.js",
   "dependencies": {
-    "@adyen/api-library": "^9.0.0",
-    "axios": "^0.21.4",
-    "bootstrap": "^5.1.1",
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "dotenv": "^10.0.0",
-    "express": "~4.16.1",
-    "express-handlebars": "^5.3.3",
-    "handlebars": "^4.7.7",
-    "hbs": "^4.1.2",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
-    "nodemon": "^2.0.12",
-    "uuid": "^8.3.2"
-  }
+    "@adyen/api-library": "^2.2.1",
+    "dot-prop": ">=5.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "minimist": ">=1.2.2",
+    "morgan": "^1.10.0",
+    "node-gyp": "^7.0.0",
+    "uuidv4": "^6.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "",
+  "license": "ISC"
 }
